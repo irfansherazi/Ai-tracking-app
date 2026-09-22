@@ -4,8 +4,8 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "dev": "tsx watch src/main.ts",
-    "start": "node dist/main.js",
+    "dev": "node api.js && tsx watch src/main.ts",
+    "start": "node api.js && node dist/main.js",
     "test": "vitest run --passWithNoTests",
     "lint": "echo ok"
   },
