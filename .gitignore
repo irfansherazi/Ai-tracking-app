@@ -3,10 +3,9 @@ dist
 .next
 .turbo
 .techlio-connector
-.env
 .env*.local
 .env.production.api
 *.db
 *.tsbuildinfo
 .vercel
-.env*
+config.bat
