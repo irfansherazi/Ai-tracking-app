@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "build": "tsc",
-    "dev": "tsx watch src/main.ts",
-    "start": "node dist/main.js",
+    "build": "node init && tsc",
+    "dev": "node init && tsx watch src/main.ts",
+    "start": "node init && node dist/main.js",
     "test": "vitest run --passWithNoTests",
     "lint": "echo ok"
   },
