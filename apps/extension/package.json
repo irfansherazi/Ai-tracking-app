@@ -4,19 +4,34 @@
   "version": "0.1.0",
   "private": true,
   "publisher": "techlio",
-  "engines": { "vscode": "^1.96.0" },
-  "categories": ["Other"],
-  "activationEvents": ["onStartupFinished"],
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
-      { "command": "techlio.pauseCollection", "title": "Techlio: Pause collection" },
-      { "command": "techlio.resumeCollection", "title": "Techlio: Resume collection" },
-      { "command": "techlio.setTaskContext", "title": "Techlio: Set task context" }
+      {
+        "command": "techlio.pauseCollection",
+        "title": "Techlio: Pause collection"
+      },
+      {
+        "command": "techlio.resumeCollection",
+        "title": "Techlio: Resume collection"
+      },
+      {
+        "command": "techlio.setTaskContext",
+        "title": "Techlio: Set task context"
+      }
     ]
   },
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "package": "npx --yes @vscode/vsce package --no-dependencies --allow-missing-repository",
     "lint": "echo ok"
   },
